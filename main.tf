@@ -63,7 +63,6 @@ resource "tfe_variable" "test-var" {
 module "hello" {
    source  = "simontest.ngrok.io/hashicorp/hello/random"
    version = "0.0.1"
- insert required variables here
    hellos = {
      hello        = "this is a hello"
      second_hello = "this is again a hello"
