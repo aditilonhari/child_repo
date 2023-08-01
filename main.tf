@@ -60,7 +60,7 @@ resource "tfe_variable" "test-var" {
 # }
 
 # priv org
- module "hello" {
+module "hello" {
    source  = "simontest.ngrok.io/hashicorp/hello/random"
    version = "0.0.1"
  insert required variables here
@@ -69,7 +69,7 @@ resource "tfe_variable" "test-var" {
      second_hello = "this is again a hello"
    }
    some_key = "this_is the key"
- }
+}
 
 module "cloudposse241" {
   source = "cloudposse/label/null"
