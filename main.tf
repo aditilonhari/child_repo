@@ -42,10 +42,10 @@ resource "tfe_variable" "test-var" {
   }
 }
 
-# module "empty" {
-#  source  = "dasmeta/empty/null"
-#  version = "1.0.0"
-# }
+module "empty" {
+ source  = "dasmeta/empty/null"
+ version = "1.0.0"
+}
 
 # prod org
 # module "hello" {
