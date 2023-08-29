@@ -29,7 +29,7 @@ resource "random_id" "child_id" {
 
 resource "tfe_variable" "test-var" {
   key = "test_var"
-  value = random_id.child_id
+  value = random_id.child_id.id
   category = "env"
   workspace_id = tfe_workspace.child[0].id
   description = "This allows the build agent to call back to TFC when executing plans and applies"
