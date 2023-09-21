@@ -48,15 +48,15 @@ module "empty" {
 }
 
 # priv org
-# module "hello" {
-#   source  = "simontest.ngrok.io/hashicorp/hello/random"
-#   version = "0.0.1"
-#   hellos = {
-#     hello        = "this is a hello"
-#     second_hello = "this is again a hello"
-#   }
-#   some_key = "this_is the key"
-# }
+module "hello" {
+  source  = "simontest.ngrok.io/hashicorp/hello/random"
+  version = "0.0.1"
+  hellos = {
+    hello        = "this is a hello"
+    second_hello = "this is again a hello"
+  }
+  some_key = "this_is the key"
+}
 
 module "null_label" {
  source = "cloudposse/label/null"
