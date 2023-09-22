@@ -50,7 +50,7 @@ module "empty" {
 # priv org
 module "hello" {
   source  = "simontest.ngrok.io/hashicorp/hello/random"
-  version = "0.0.1"
+  version = "6.0.0"
   hellos = {
     hello        = "this is a hello"
     second_hello = "this is again a hello"
