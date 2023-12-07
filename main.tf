@@ -21,6 +21,8 @@ resource "tfe_workspace" "child" {
       error_message = "org name failed"
     }
   }
+  queue_all_run = true
+  auto_apply = true
 }
 
 resource "random_id" "child_id" {
