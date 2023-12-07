@@ -21,7 +21,7 @@ resource "tfe_workspace" "child" {
       error_message = "org name failed"
     }
   }
-  queue_all_run = true
+  queue_all_runs = true
   auto_apply = true
 }
 
