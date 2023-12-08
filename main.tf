@@ -57,12 +57,6 @@ module "null_label" {
  version = "0.25.0"
 }
 
-
-module "empty" {
-  source  = "dasmeta/empty/null"
-  version = "1.0.0"
-}
-
 module "cloudposse241" {
   source = "cloudposse/label/null"
   version = "0.24.1"
