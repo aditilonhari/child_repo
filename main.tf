@@ -3,6 +3,10 @@ terraform {
     tfe = {
       version = "~> 0.46.0"
     }
+    http = {
+      source = "hashicorp/http"
+      version = "3.4.0"
+    }
   }
 }
 
@@ -44,6 +48,14 @@ resource "tfe_variable" "test-var" {
   }
 }
 
+data "http" "google" {
+  url = "https://www.google.com"
+
+  # Optional request headers
+  request_headers = {
+    Accept = "application/json"
+  }
+}
 
 ################################ MODULES ################################
 
