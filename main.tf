@@ -121,16 +121,6 @@ module "labels" {
   version = "1.3.0"
 }
 
-module "boolean-true" {
-  source  = "devops-workflow/boolean/local"
-  value   = true
-}
-
-module "boolean-false" {
-  source  = "devops-workflow/boolean/local"
-  value   = false
-}
-
 # priv org
 # module "hello" {
 #  source  = "simontest.ngrok.io/hashicorp/hello/random"
