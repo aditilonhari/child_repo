@@ -123,15 +123,13 @@ module "labels" {
 
 module "boolean-true" {
   source  = "devops-workflow/boolean/local"
-  value   = "true"
+  value   = true
 }
 
 module "boolean-false" {
   source  = "devops-workflow/boolean/local"
-  value   = "false"
+  value   = false
 }
-
-
 
 # priv org
 # module "hello" {
