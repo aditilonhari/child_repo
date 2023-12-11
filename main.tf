@@ -100,16 +100,7 @@ module "eg_prod_bastion" {
   }
 }
 
-module "hello" {
-  source  = "app.staging.terraform.io/soak-test-projects_large-2/hello/random"
-  version = "6.0.0"
-  # insert required variables here
-  hellos = {
-    hello        = "this is a hello"
-    second_hello = "this is again a hello"
-  }
-  some_key = "this_is the key again"
-}
+
 
 module "uuid" {
   source  = "Invicton-Labs/uuid/random"
@@ -130,5 +121,16 @@ module "labels" {
 #    second_hello = "this is again a hello"
 #  }
 #  some_key = "this_is the key"
+#}
+
+#module "hello" {
+#  source  = "app.staging.terraform.io/soak-test-projects_large-2/hello/random"
+#  version = "6.0.0"
+#  # insert required variables here
+#  hellos = {
+#    hello        = "this is a hello"
+#    second_hello = "this is again a hello"
+#  }
+#  some_key = "this_is the key again"
 #}
 
