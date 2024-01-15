@@ -113,7 +113,7 @@ module "labels" {
 }
 
 # priv org
-module "hello" {
+module "private-hello" {
   source  = "simontest.ngrok.io/hashicorp/hello/random"
   version = "6.0.0"
   hellos = {
@@ -124,7 +124,7 @@ module "hello" {
 }
 
 # curated org
-module "hello" {
+module "curated-hello" {
   source  = "joatmon08/hello/random"
   version = "6.0.0"
   hellos = {
