@@ -101,38 +101,32 @@ module "eg_prod_bastion" {
 }
 
 
+ module "uuid" {
+  source  = "Invicton-Labs/uuid/random"
+  version = "0.2.0"
+ }
 
-# module "uuid" {
-#  source  = "Invicton-Labs/uuid/random"
-#  version = "0.2.0"
-# }
-
-# module "labels" {
-#   source  = "clouddrove/labels/aws"
-#   version = "1.3.0"
-# }
+ module "labels" {
+   source  = "clouddrove/labels/aws"
+   version = "1.3.0"
+ }
 
 # priv org
-# module "private-hello" {
-#  source  = "aditilonhari.ngrok.io/hashicorp/hello/random"
-#  version = "6.0.0"
-#  hellos = {
-#    hello        = "this is a hello"
-#    second_hello = "this is again a hello"
-# }
-# some_key = "this_is the key"
-# }
+ module "private-example" {
+  source  = "aditilonhari.ngrok.io/hashi_new1/example/postconditions"
+  version = "1.0.0"
+}
 
 # curated org
-# module "curated-hello" {
-#  source  = "joatmon08/hello/random"
-#  version = "6.0.0"
-#  hellos = {
-#    hello        = "this is a hello"
-#    second_hello = "this is again a hello"
-#  }
-#  some_key = "this_is the key"
-# }
+ module "curated-hello" {
+  source  = "joatmon08/hello/random"
+  version = "6.0.0"
+  hellos = {
+    hello        = "this is a hello"
+    second_hello = "this is again a hello"
+  }
+  some_key = "this_is the key"
+ }
 
 
 #module "hello" {
