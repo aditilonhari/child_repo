@@ -69,36 +69,36 @@ module "null_label" {
  version = "0.25.0"
 }
 
-module "null0220" {
- source = "cloudposse/label/null"
- version = "0.22.0"
-}
+# module "null0220" {
+#  source = "cloudposse/label/null"
+#  version = "0.22.0"
+# }
 
-module "null0230" {
- source = "cloudposse/label/null"
- version = "0.23.0"
-}
+# module "null0230" {
+#  source = "cloudposse/label/null"
+#  version = "0.23.0"
+# }
 
-module "cloudposse241" {
-  source = "cloudposse/label/null"
-  version = "0.24.1"
-}
+# module "cloudposse241" {
+#   source = "cloudposse/label/null"
+#   version = "0.24.1"
+# }
 
-module "eg_prod_bastion" {
-  source = "cloudposse/label/null"
-  version = "0.25.0"
+# module "eg_prod_bastion" {
+#   source = "cloudposse/label/null"
+#   version = "0.25.0"
 
-  namespace  = "eg"
-  stage      = "prod"
-  name       = "bastion"
-  attributes = ["public"]
-  delimiter  = "-"
+#   namespace  = "eg"
+#   stage      = "prod"
+#   name       = "bastion"
+#   attributes = ["public"]
+#   delimiter  = "-"
 
-  tags = {
-    "BusinessUnit" = "XYZ",
-    "Snapshot"     = "true"
-  }
-}
+#   tags = {
+#     "BusinessUnit" = "XYZ",
+#     "Snapshot"     = "true"
+#   }
+# }
 
 
  module "uuid" {
