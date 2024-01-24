@@ -1,1 +1,1 @@
-organization = "hashicorp"
+organization = "hashi_new1"
