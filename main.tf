@@ -112,10 +112,10 @@ module "null_label" {
  }
 
 # priv org
-# module "private-example" {
-#  source  = "aditilonhari.ngrok.io/hashi_new1/example/postconditions"
-#  version = "1.0.0"
-# }
+ module "private-example" {
+  source  = "aditilonhari.ngrok.io/hashi_inc1/label/null"
+ version = "1.0.0"
+}
 
 # curated org
  module "curated-hello" {
