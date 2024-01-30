@@ -112,21 +112,21 @@ module "null_label" {
  }
 
 # priv org
- module "private-example" {
-  source  = "aditilonhari.ngrok.io/hashi_inc1/label/null"
- version = "1.0.0"
-}
+# module "private-example" {
+#  source  = "aditilonhari.ngrok.io/hashi_inc1/label/null"
+# version = "1.0.0"
+# }
 
 # curated org
- module "curated-hello" {
-  source  = "joatmon08/hello/random"
-  version = "6.0.0"
-  hellos = {
-    hello        = "this is a hello"
-    second_hello = "this is again a hello"
-  }
-  some_key = "this_is the key"
- }
+# module "curated-hello" {
+#  source  = "joatmon08/hello/random"
+#  version = "6.0.0"
+#  hellos = {
+#    hello        = "this is a hello"
+#    second_hello = "this is again a hello"
+#  }
+#  some_key = "this_is the key"
+# }
 
 
 #module "hello" {
