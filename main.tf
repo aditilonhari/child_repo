@@ -17,7 +17,7 @@ provider "tfe" {
 resource "tfe_workspace" "child" {
   count        = 10
   organization = var.organization
-  name         = "zzchild-${count.index}-${random_id.child_id.id}"
+  name         = "child-${count.index}"
 
   lifecycle {
     postcondition {
